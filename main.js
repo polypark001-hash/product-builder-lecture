@@ -1,11 +1,29 @@
-const generateBtn = document.getElementById('generate-btn');
-const numbersContainer = document.getElementById('numbers-container');
+const recommendBtn = document.getElementById('recommend-btn');
+const recommendationContainer = document.getElementById('recommendation-container');
 const themeBtn = document.getElementById('theme-btn');
 const htmlElement = document.documentElement;
 
-const colors = [
-    '#ff6b6b', '#f94d6e', '#f06595', '#a0c4ff', '#84a98c', '#52b788',
-    '#f7a072', '#f6bd60', '#f5cac3', '#f28482', '#d4a373', '#a2d2ff'
+const dinnerMenus = [
+    'Kimchi Stew (Kimchi-jjigae)',
+    'Bulgogi',
+    'Bibimbap',
+    'Tteokbokki',
+    'Korean Fried Chicken',
+    'Samgyeopsal (Pork Belly)',
+    'Jajangmyeon',
+    'Pad Thai',
+    'Sushi',
+    'Ramen',
+    'Pasta Carbonara',
+    'Pizza Margherita',
+    'Steak and Fries',
+    'Tacos',
+    'Burgers',
+    'Butter Chicken',
+    'Pho',
+    'Dim Sum',
+    'Fish and Chips',
+    'Greek Salad & Gyro'
 ];
 
 // Theme Logic
@@ -22,27 +40,21 @@ themeBtn.addEventListener('click', () => {
     themeBtn.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
 });
 
-// Generation Logic
-generateBtn.addEventListener('click', () => {
-    numbersContainer.innerHTML = '';
-    const numbers = new Set();
-    while (numbers.size < 6) {
-        numbers.add(Math.floor(Math.random() * 45) + 1);
-    }
+// Recommendation Logic
+recommendBtn.addEventListener('click', () => {
+    recommendBtn.disabled = true;
+    recommendationContainer.innerHTML = '<p class="placeholder-text">Choosing something delicious...</p>';
 
-    const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
+    setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * dinnerMenus.length);
+        const selectedMenu = dinnerMenus[randomIndex];
 
-    sortedNumbers.forEach((number, index) => {
-        setTimeout(() => {
-            const circle = document.createElement('div');
-            circle.classList.add('number-circle');
-            circle.textContent = number;
-            circle.style.backgroundColor = colors[index % colors.length];
-            circle.style.transform = 'scale(0)';
-            numbersContainer.appendChild(circle);
-            setTimeout(() => {
-                circle.style.transform = 'scale(1)';
-            }, 50);
-        }, index * 100);
-    });
+        recommendationContainer.innerHTML = '';
+        const menuDisplay = document.createElement('div');
+        menuDisplay.classList.add('menu-item');
+        menuDisplay.textContent = selectedMenu;
+        
+        recommendationContainer.appendChild(menuDisplay);
+        recommendBtn.disabled = false;
+    }, 800);
 });

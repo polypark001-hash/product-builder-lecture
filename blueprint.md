@@ -1,41 +1,35 @@
-
-# Lotto Number Recommendation Site Blueprint
+# Dinner Menu Recommender Site Blueprint
 
 ## Overview
 
-This application is a simple and visually appealing Lotto Number Recommendation site. It generates six unique random numbers between 1 and 45 for the user, providing a clean and modern user experience. The design is mobile-responsive and incorporates modern CSS for styling and interactivity.
+This application is a visually appealing Dinner Menu Recommender site. It helps users decide what to eat for dinner by randomly selecting a delicious menu item from a curated list. The design is modern, mobile-responsive, and supports both light and dark modes.
 
 ## Project Outline
 
 ### Style and Design
 
-*   **Layout:** A centered, single-column layout for easy viewing on all devices.
-*   **Color Palette:** A vibrant and energetic color scheme.
-    *   Background: A subtle texture.
-    *   Header: A deep, eye-catching color.
-    *   Numbers: Each number is displayed in a colored circle.
-    *   Button: A "glowing" interactive button.
-*   **Theme Support:** Support for Light and Dark modes using CSS variables and a toggle switch.
-*   **Typography:** Expressive fonts to emphasize the title and numbers.
+*   **Layout:** A centered, single-column layout optimized for food photography or icons.
+*   **Color Palette:** Warm and appetizing colors (e.g., oranges, reds, or clean greens).
+    *   Background: Subtle texture or food-related pattern.
+    *   Theme Support: Light and Dark modes with automatic persistence.
 *   **Visual Effects:**
-    *   Soft drop shadows on cards and buttons to create depth.
-    *   Subtle animations on number generation.
-*   **Iconography:** Use of icons to enhance understanding.
-*   **Responsiveness:** The layout adapts to different screen sizes.
+    *   Smooth transitions between menus.
+    *   "Glow" effect on the recommendation button.
+    *   Card-based UI for the menu display.
+*   **Responsiveness:** Works perfectly on mobile and desktop.
 
 ### Features
 
-*   **Number Generation:** Generates 6 unique random numbers between 1 and 45.
-*   **Display:** The generated numbers are displayed in a clear and attractive format.
-*   **Interactivity:** A button to trigger the number generation.
-*   **Theme Toggle:** A switch to toggle between light and dark modes, persisting the user's preference.
+*   **Menu Recommendation:** Randomly selects a menu from categories like Korean, Western, Japanese, Chinese, etc.
+*   **Theme Toggle:** Switch between Light and Dark modes.
+*   **Interactive UI:** Animated selection process to build anticipation.
 
 ## Current Plan
 
-*   **Objective:** Add Dark/Light mode functionality and deploy via Git.
+*   **Objective:** Transform the Lotto site into a Dinner Menu Recommender and deploy.
 *   **Steps:**
-    1.  **Modify `style.css`:** Implement CSS variables for colors and define dark mode styles.
-    2.  **Modify `index.html`:** Add a theme toggle button.
-    3.  **Modify `main.js`:** Implement the theme switching logic and persistence.
-    4.  **Git Deployment:** Commit changes and prepare for deployment.
-
+    1.  **Modify `index.html`:** Update titles, labels, and structure for menu display.
+    2.  **Modify `style.css`:** Adjust colors and patterns to suit a food theme.
+    3.  **Modify `main.js`:** Implement the menu selection logic with a diverse list of dinner options.
+    4.  **Update `README.md`:** Reflect the new project description.
+    5.  **Git Deployment:** Commit and push the transformation to GitHub.

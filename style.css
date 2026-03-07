@@ -1,26 +1,28 @@
 
 :root {
-    --bg-color: #f0f2f5;
-    --text-color: #333;
+    --bg-color: #fdfaf6;
+    --text-color: #4a4a4a;
     --card-bg: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --btn-bg: #4CAF50;
-    --btn-hover: #45a049;
-    --bg-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d9d9d9' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E");
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --accent-color: #ff6b6b;
+    --btn-bg: #ff6b6b;
+    --btn-hover: #fa5252;
+    --bg-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff6b6b' fill-opacity='0.05'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 [data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --card-bg: #1e1e1e;
-    --shadow-color: rgba(0, 0, 0, 0.5);
-    --btn-bg: #2e7d32;
-    --btn-hover: #1b5e20;
-    --bg-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23333333' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E");
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --card-bg: #2d2d2d;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --accent-color: #ff8787;
+    --btn-bg: #e03131;
+    --btn-hover: #c92a2a;
+    --bg-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff6b6b' fill-opacity='0.05'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,103 +31,115 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     background-image: var(--bg-pattern);
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .container {
     text-align: center;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
 }
 
 .theme-toggle {
     position: absolute;
-    top: -40px;
+    top: -50px;
     right: 0;
 }
 
 #theme-btn {
-    background: none;
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    padding: 5px 10px;
-    border-radius: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 8px 15px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 #theme-btn:hover {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+    background-color: var(--accent-color);
+    color: white;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: var(--text-color);
+    font-size: 2.8rem;
+    color: var(--accent-color);
     margin-bottom: 2rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
-.lotto-card {
+.menu-card {
     background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: background-color 0.3s, box-shadow 0.3s;
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px var(--shadow-color);
+    transition: transform 0.3s ease, background-color 0.4s;
 }
 
-.numbers-container {
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.recommendation-container {
+    min-height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    min-height: 60px;
+    margin-bottom: 2.5rem;
 }
 
-.number-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.placeholder-text {
+    font-size: 1.1rem;
+    opacity: 0.6;
 }
 
-#generate-btn {
+.menu-item {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    animation: bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#recommend-btn {
     background-color: var(--btn-bg);
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
+    padding: 18px 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px var(--btn-bg), 0 0 20px var(--btn-bg);
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
 }
 
-#generate-btn:hover {
+#recommend-btn:hover {
     background-color: var(--btn-hover);
-    box-shadow: 0 0 15px var(--btn-bg), 0 0 25px var(--btn-bg);
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+}
+
+#recommend-btn:active {
+    transform: scale(0.98);
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-
-    .number-circle {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+    .menu-item {
+        font-size: 1.8rem;
     }
 }
