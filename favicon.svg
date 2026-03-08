@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Plate -->
+  <circle cx="32" cy="34" r="26" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2"/>
+  <circle cx="32" cy="34" r="20" fill="#fff" stroke="#e8e8e8" stroke-width="1"/>
+  <!-- Steam lines -->
+  <path d="M22 18 Q24 12 22 6" fill="none" stroke="#ffb74d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 16 Q34 10 32 4" fill="none" stroke="#ff9800" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 18 Q44 12 42 6" fill="none" stroke="#ffb74d" stroke-width="2" stroke-linecap="round"/>
+  <!-- Fork -->
+  <g transform="translate(10, 28) rotate(-35)">
+    <rect x="3" y="0" width="1.5" height="14" rx="0.5" fill="#78909c"/>
+    <rect x="7" y="0" width="1.5" height="14" rx="0.5" fill="#78909c"/>
+    <rect x="11" y="0" width="1.5" height="14" rx="0.5" fill="#78909c"/>
+    <rect x="2" y="13" width="12" height="3" rx="1" fill="#78909c"/>
+    <rect x="6" y="15" width="4" height="18" rx="2" fill="#90a4ae"/>
+  </g>
+  <!-- Knife -->
+  <g transform="translate(46, 28) rotate(35)">
+    <path d="M2 0 Q0 7 2 14 L6 14 L6 0 Z" fill="#90a4ae"/>
+    <rect x="2" y="13" width="5" height="3" rx="1" fill="#78909c"/>
+    <rect x="2.5" y="15" width="4" height="18" rx="2" fill="#90a4ae"/>
+  </g>
+</svg>
